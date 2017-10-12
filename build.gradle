@@ -1,5 +1,14 @@
+plugins {
+  id 'com.gradle.build-scan' version '1.9.1'
+}
+
 group 'com-bug'
 version '1.0-SNAPSHOT'
+
+buildScan {
+  licenseAgreementUrl = 'https://gradle.com/terms-of-service'
+  licenseAgree = 'yes'
+}
 
 apply plugin: 'java'
 
